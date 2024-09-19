@@ -22,6 +22,7 @@ plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
 
+# show how close the prediction is to the actual values
 plt.scatter(X_test, y_test, color='red', label='Test data')
 plt.plot(X_train, regressor.predict(X_train), color='blue', label='Predicted test data')
 plt.title('Salary vs Experience (Test set)')
