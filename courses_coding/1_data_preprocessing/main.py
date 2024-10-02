@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
 
 def run():
-    dataset = pd.read_csv('courses_coding/0_data_preparation/Data.csv')
+    dataset = pd.read_csv('courses_coding/1_data_preprocessing/Data.csv')
     # feature data (independent variables), get all columns except the last one, -1 index of the last column
     X = dataset.iloc[:, :-1].values
     # predicted datag
@@ -28,7 +28,7 @@ def run():
     # print('X = {}'.format(X))
 
     le = LabelEncoder()
-    y = le.fit_transform(y)
+    y = le.fit_transform(np.array(y))
     # print('Depended data after transforming by LabelEncoder')
     # print('y = {}'.format(y))
 
