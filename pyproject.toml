@@ -7,13 +7,16 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-numpy = "^2.1.1"
 pandas = "^2.2.2"
 matplotlib = "^3.9.2"
 scikit-learn = "^1.5.2"
 scipy = "^1.14.1"
 apyori = "^1.1.2"
 nltk = "^3.9.1"
+tensorflow = "^2.17.0"
+numpy = "^1.26.0"
+keras = "^3.6.0"
+nbformat = "^5.10.4"
 
 
 [build-system]
