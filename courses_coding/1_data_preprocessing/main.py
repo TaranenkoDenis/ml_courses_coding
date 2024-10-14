@@ -29,8 +29,8 @@ def run():
 
     le = LabelEncoder()
     y = le.fit_transform(np.array(y))
-    # print('Depended data after transforming by LabelEncoder')
-    # print('y = {}'.format(y))
+    print('Depended data after transforming by LabelEncoder')
+    print('y = {}'.format(y))
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
 
